@@ -21,3 +21,6 @@ mocha ./tests/SudokuSolver.test.js
 ./RunIntTests.sh
 ```
 NOTE: the test results are redirected in result.txt
+
+## Credits
+### some of the examples in the testBoards directory are from http://sudopedia.enjoysudoku.com/Test_Cases.html

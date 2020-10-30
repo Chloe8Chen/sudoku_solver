@@ -97,7 +97,16 @@ function TestInsufficientInput (testFile) {
     console.log('--------------------')
   }
   
-function TestEasy (testFile) {
+  function TestAmbiguousBoard (testFile) {
+    console.log('--------------------')
+    console.log('Running test: ' + TestAmbiguousBoard.name)
+    const result = runScript(testFile)
+    const isPass = validateEquals(MORE_SOLUTIONS, result[0], 'validated that the there is more than one solution for ambiguous board')
+    checkResults(isPass, TestAmbiguousBoard.name)
+    console.log('--------------------')
+  }
+
+  function TestEasy (testFile) {
   console.log('--------------------')
   console.log('Running test: ' + TestEasy.name)
   const result = runScript(testFile)
@@ -166,4 +175,5 @@ TestHard('./testBoards/Hard.txt')
 TestUnsolvable('./testBoards/Unsolvable.txt')
 TestSolved('./testBoards/Solved.txt')
 TestInsufficientInput('./testBoards/InsufficientInput.txt')
+TestAmbiguousBoard('./testBoards/AmbiguousBoard.txt')
 TestWrongPath('./wrongpath')

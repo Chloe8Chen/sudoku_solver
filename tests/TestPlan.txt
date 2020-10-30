@@ -4,26 +4,37 @@
 #                                                #
 ##################################################
 
+
 Type of Tests
-Unit tests -> cover single functions, make sure they work with expected ouput
+Unit tests -> cover single functions, make sure that single functions work with expected ouput
 Integrated automation tests -> cover the integration between input file and solver program (implemented from the test cases below)
 
+
 Test Cases
-1. invalid boards:
+1. Program robustness
+1) Run program with no argument for the file path
+Expected result -> the program should display message indicating that path to board is needed
+2) Run program with wrong file path
+Expected result -> the program should dsplay message indicating that the path is invalid
+3) Run program with correct argument for the file path
+Expected result -> the program should run correcty
+
+2. invalid boards:
 1) invalid board format (10*9 board, uneven rows, etc)
-expected result -> return console "This is an invalid board"
+Expected result -> return console "This is an invalid board"
 3) board with insufficient numbers
-expected result -> return console "There is more than one solution for this board."
+Expected result -> return console "There is more than one solution for this board."
 4) invalid board with invalid numbers (same number in the same row/column/subgrid)
-expected result -> return console "This is an invalid board"
+Expected result -> return console "This is an invalid board"
 5) board with no solution
-expected result -> return console "There is no solution"
-2. valid boards:
+Expected result -> return console "There is no solution"
+
+3. valid boards:
 1) solved board
-expected result -> return console of "LEVEL: EASY" and a prettier print of the board
+Expected result -> return console of "LEVEL: EASY" and a prettier print of the board
 2) board with only one empty spot
-expected result -> return console of "LEVEL: EASY" and a prettier print of the board
+Expected result -> return console of "LEVEL: EASY" and a prettier print of the board
 3) easy board
-expected result -> return console of "LEVEL: EASY" and a prettier print of the board
+Expected result -> return console of "LEVEL: EASY" and a prettier print of the board
 4) not easy board
-expected result -> return console of "LEVEL: HARD" and a preattier print of the board
+Expected result -> return console of "LEVEL: HARD" and a preattier print of the board

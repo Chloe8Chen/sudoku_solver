@@ -110,6 +110,7 @@ function canSolve (row, col, reverse, board) {
     }
   } else {
     for (let i = 1; i <= 9; i++) {
+      // count the number of tempted placement to determine complexity 
       complexity++
       if (canPlace(row, col, i, board)) {
         board[row][col] = i

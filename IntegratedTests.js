@@ -156,6 +156,9 @@ function checkResults (pass, test) {
   }
 }
 
+console.log('#################################')
+console.log('#       INTEGRATED TESTS        #')
+console.log('#################################')
 TestInvalidFormat('./testBoards/InvalidFormat.txt')
 TestInvalidNumber('./testBoards/InvalidNumber.txt')
 TestEasy('./testBoards/Easy.txt')

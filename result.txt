@@ -1,0 +1,40 @@
+--------------------
+Running test: TestInvalidFormat
+validated that the board is in invalid format
+Test TestInvalidFormat PASSED!
+--------------------
+--------------------
+Running test: TestInvalidNumber
+validated that the board has invalid number
+Test TestInvalidNumber PASSED!
+--------------------
+--------------------
+Running test: TestEasy
+validated the solution of easy board
+Test TestEasy PASSED!
+--------------------
+--------------------
+Running test: TestHard
+validated the solution of hard board
+Test TestHard PASSED!
+--------------------
+--------------------
+Running test: TestUnsolvable
+validated for unsolvable board
+Test TestUnsolvable PASSED!
+--------------------
+--------------------
+Running test: TestSolved
+validated the solution of solved board
+Test TestSolved PASSED!
+--------------------
+--------------------
+Running test: TestInsufficientInput
+validated that the there is more than one solution for insufficent input
+Test TestInsufficientInput PASSED!
+--------------------
+--------------------
+Running test: TestWrongPath
+validated that path is wrong
+Test TestWrongPath PASSED!
+--------------------

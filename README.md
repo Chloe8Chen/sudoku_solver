@@ -31,7 +31,7 @@ NOTE: the test results are redirected in result.txt
 ### Complexity (difficulty) calculation
 Currently the method to calculate the complexity of the sudoku board is to count the number of tempted placement while running the program, and by using the examples of easy and hard (medium) board we chose a boudary that is suitable to determine the complexity of the board.
 
-`To calculate the complexity more thoroughly and scientifically, we can analyse the models that defines the sudoku board difficulties (to see detailed info: https://www.sudokuwiki.org/sudoku.htm) to find the baselines of difficulty categories, and then compare the sudoku board with the models, categorize the board.`
+_To calculate the complexity more thoroughly and scientifically, we can analyse the models that defines the sudoku board difficulties (to see detailed info: https://www.sudokuwiki.org/sudoku.htm) to find the baselines of difficulty categories, and then compare the sudoku board with the models, categorize the board._
 
 ### Automation test implementation
 In integrated test program, we only implemented the most representive test cases in the two test groups. More test cases can be written based on the test plan. Also the test plan program can be simplified and/or refactored.
